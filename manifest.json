@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "content_security_policy": "script-src 'self' https://cheapass.in https://ajax.googleapis.com; object-src 'self';",
+
+	"name": "Track with Cheapass",
+	"description": "Get real-time-price-drop-alerts with Cheapass.in",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+  },
+
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
