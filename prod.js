@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       var payload = $(this).serialize();
       $.ajax({
         method: 'POST',
-        url: 'https://cheapass.now.sh/api/products',
+        url: 'https://dash.cheapass.in/api/products',
         data: payload,
         success: queueResponseHandler,
         error: errorHandler,
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function queueResponseHandler(res) {
       var isError = res.error;
       var classname = isError ? 'caTextError' : 'caTextSuccess';
-      var message = isError ? res.error : res.status;
+      var message = isError ? res.error : res.message;
 
       var messageDOM = '<p class="' + classname + '">' + message + '</p>'
 
